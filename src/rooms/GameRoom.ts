@@ -274,7 +274,7 @@ export class GameRoom extends Room<GameState> {
             return;
         }
 
-        if(this.maxClients - this.playerCount <= 2) {
+        if(this.maxClients - this.playerCount <= 3) {
             console.log(`Other players didn't join, creating ${this.maxClients - this.playerCount} bots to start game`)
             if(this.playerCount < this.maxClients) {
                 this.lock();
