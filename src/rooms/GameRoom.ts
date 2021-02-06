@@ -103,6 +103,7 @@ export class GameRoom extends Room<GameState> {
         try {
             // If consented, remove without wait
             if (consented) {
+                console.log("player has left"+client.sessionId);
                 this.removePlayer(client.sessionId);
             }
             else {
